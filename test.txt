@@ -1,0 +1,41 @@
+program {
+struct s1 {
+	int x = 1, y = -1;
+	bool z;
+};
+struct s2 {
+	string w1 = "Test ", w2 = "file";
+	bool a,b,c;
+};
+struct s7 {};
+bool b = false;
+string p = "program", s;
+s1 x;
+s2 y,z;
+
+write(y.w1+y.w2);
+write("\n");
+goto f;
+for (x.x = 20; x.x < 18; x.x = x.x + 1) {
+	if (b) {
+		write(x.x);
+		write("\n");
+	} else {}
+	b = not b;
+}
+
+f: x.y = -x.y*10;
+s = "1";
+while(true){
+	for (x.x = 0; x.x < 5; x.x = x.x +1) {write("!"); break;}
+	if (x.y>0) {}
+	else break;
+	s = "0" + s;
+	x.y = x.y - 1;
+}
+write(s,"\n");
+
+y.w2 = y.w1 + p;
+z = y;
+write(z.w2);
+}
